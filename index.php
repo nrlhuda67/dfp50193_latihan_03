@@ -17,10 +17,35 @@
     */
     $name = 'Huda';
     echo "<h2> Hello $name</h2>";
-    
+    $x = 10;  
+    $y = 11;
+    echo $x + $y;
     $hadir = false;
     $umur = 22;
-    $nokp = '010912021170';?>
+    $nokp = '010912021170';
+    $x = 100;
+    $y = 80;
+
+    if ($x == 100 or $y == 80) {
+        echo "<h4>Hello World</h4>";
+    } else {
+        echo "<h5>Tak dak apa</h5>";
+    }
+    
+    ?>
+    <h2>
+        <?php
+        $bandar = 'Parit Buntar';
+        $baru = '';
+        for($x = 0; $x < strlen($bandar); $x++) {
+            $baru .= $bandar[$x] . '-';
+        }
+        echo $baru;
+        ?>
+    </h2>
+
+    
+    
     
 </body>
 </html>
